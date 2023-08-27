@@ -54,15 +54,16 @@ export class LocationController {
     return this.locationService.updateLocation(token, +locationId, updateLocation);
   }
 
-  // Pagination of location
-  @Get('pagination')
-  getLocationPagination(
-    @Query('pageIndex') pageIndex: number, 
-    @Query('pageSize') pageSize: number, 
-    @Query('keyword') keyWord: string
+  // Get location by search pagination
+  @Get('pagination/:pageIndex:pageSize:keyword')
+  searchLocationByPagination(
+    @Param('pageIndex') pageIndex: number,
+    @Param('pageSize') pageSize: number, 
+    @Param('keyword') keyword: string
   ) {
-    return this.locationService.getLocationPagination(pageIndex, pageSize, keyWord)
+    return this.locationService.searchLocationByPagination(+pageIndex, +pageSize, keyword); 
   }
+
 
   // Upload image for location
   @ApiHeader({

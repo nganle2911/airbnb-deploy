@@ -134,19 +134,19 @@ export class LocationService {
     }
   }
 
-  // Get location by pagination
-  async getLocationPagination(pageIndex, pageSize, keyword) {
+  // Get location by search pagination
+  async searchLocationByPagination(pageIndex, pageSize, keyword) {
     try {
       const startIndex = (pageIndex - 1) * pageSize;
-      const endIndex = startIndex + pageSize;
+      const endIndex = startIndex + pageSize; 
 
       let filteredItems = await this.prisma.location.findMany({
         where: {
           location_name: {
-            contains: keyword,
-          },
-        },
-      });
+            contains: keyword
+          }
+        }
+      }); 
 
       if (filteredItems.length > 0) {
         if (keyword) {
@@ -158,14 +158,14 @@ export class LocationService {
         const itemSlice = filteredItems.slice(startIndex, endIndex);
 
         return responseObject(200, "Get locations successfully!", {
-          pageIndex,
+          pageIndex, 
           pageSize,
           totalRow: filteredItems.length,
-          keyword: `Location name LIKE $%{keyword}%`,
+          keyword: `Location name LIKE %${keyword}%`,
           data: itemSlice
-        });
+        })
       } else {
-        return responseObject(200, "No matching results found!", filteredItems);
+        return responseObject(200, "No matching results found!", filteredItems)
       }
     } catch (err) {
       throw new HttpException(err.response, err.status);
