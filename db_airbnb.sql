@@ -14,11 +14,6 @@ CREATE TABLE users(
 	avatar VARCHAR(250)
 );
 
-INSERT INTO users (email, pass_word, full_name, birth_day, gender, user_role, phone, avatar) VALUES 
-	('ngan@gmail.com', '1234', 'Ngan', '29/11/1993', 1, 'admin', '023184858'), 
-	('thanh@gmail.com', '1234', 'Thanh', '14/10/2002', 0, 'admin', '023184458'), 
-	('olivia@gmail.com', '1234', 'Olivia', '16/12/1994', 0, 'user', '023184548'); 
-
 CREATE TABLE location(
 	location_id INT PRIMARY KEY AUTO_INCREMENT,
 	location_name VARCHAR(250),
