@@ -23,12 +23,12 @@ CREATE TABLE location(
 );
 
 INSERT INTO location (location_name, province, nation, location_image)
-VALUES 	('Paris', 'Île-de-France', 'France'),
+VALUES 	('Paris', 'Ile-de-France', 'France'),
 		('Phan Thiet', 'Binh Thuan', 'Vietnam'),
 		('Nha Trang', 'Khanh Hoa', 'Vietnam'),
 		('Nakano City', 'Tokyo', 'Japan'),
 		('Long Xuyen', 'An Giang', 'Vietnam'),
-		('Nice', 'Provence-Alpes-Côte d'Azur, 'France'),
+		('Nice', 'Provence-Alpes-Cote Azur', 'France'),
 		('Peshastin', 'Washington', 'United States'),
 		('County Wicklow', 'Ireland', 'Ireland'),
 		('Colares', 'Lisboa', 'Portugal'),
