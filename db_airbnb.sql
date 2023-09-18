@@ -57,10 +57,9 @@ CREATE TABLE rooms(
 );
 
 INSERT INTO rooms (room_name, client_number, bed_room, bed, bath_room, description, price, washing_machine, iron, tivi, air_conditioner, wifi, kitchen, parking, pool, location_id)
-VALUES	('Casa Acqua Erbalunga', 2, 1, 1, 1, 'The dream for a stay for two! 800m from the village of Erbalunga, a quiet place, a magnificent sea and mountain view, just what it takes to spend pleasant moments. A mini private pool, heated to 30 degrees from November to May, a covered terrace sheltered from heat. An exotic atmosphere for a perfect relaxation! 90m2 designed for laziness! 
-The loft and villa are never rented at the same time.', 215, true, false, true, false, true, true, true, false, 10), 
-		('Coconut Garden Villa', 4, 1, 2, 1, 'Just 100 meters from the sea, Coconut Garden offers comfortable and intimate 70sqm duplex bungalows. The pool and the tropical garden make Coconut Garden a little haven of peace. On the ground floor, facing the garden and pool, a spacious and pleasant room awaits you. Guests can enjoy AC and a flat-screen TV with cable channels.', 21, true, true, true, true, true, true, true, true, 2), 
-		('Le Nest Hotel', 2, 1, 1, 1, 'The Superior Room is in a monochrome blue and green. There are a couple of versions, but each is carefully decorated with selected elegant accessories and stylish colours to capture the essence of the surrounding area. Quality bedding, soft and harmonious colours, a marble bathroom that opens like a wardrobe, independent toilets, a television nestled in the fireplace, Baumann 1950 chairs, vintage mirror, are the assets of this superior room.', 173, false, false, true, false, true, true, true, false, 1); 
+VALUES	('Casa Acqua Erbalunga', 2, 1, 1, 1, 'The dream for a stay for two!', 215, true, false, true, false, true, true, true, false, 10), 
+		('Coconut Garden Villa', 4, 1, 2, 1, 'Just 100 meters from the sea, Coconut Garden offers comfortable and intimate 70sqm duplex bungalows.', 21, true, true, true, true, true, true, true, true, 2), 
+		('Le Nest Hotel', 2, 1, 1, 1, 'The Superior Room is in a monochrome blue and green.', 173, false, false, true, false, true, true, true, false, 1); 
 
 CREATE TABLE reservations(
 	reservation_id INT PRIMARY KEY AUTO_INCREMENT,
