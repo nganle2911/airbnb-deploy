@@ -56,10 +56,10 @@ CREATE TABLE rooms(
 	image VARCHAR(250)
 );
 
-I/* NSERT INTO rooms (room_name, client_number, bed_room, bed, bath_room, description, price, washing_machine, iron, tivi, air_conditioner, wifi, kitchen, parking, pool, location_id)
+/* INSERT INTO rooms (room_name, client_number, bed_room, bed, bath_room, description, price, washing_machine, iron, tivi, air_conditioner, wifi, kitchen, parking, pool, location_id)
 VALUES	('Casa Acqua Erbalunga', 2, 1, 1, 1, 'The dream for a stay for two!', 215, true, false, true, false, true, true, true, false, 10), 
 		('Coconut Garden Villa', 4, 1, 2, 1, 'Just 100 meters from the sea, Coconut Garden offers comfortable and intimate 70sqm duplex bungalows.', 21, true, true, true, true, true, true, true, true, 2), 
-		('Le Nest Hotel', 2, 1, 1, 1, 'The Superior Room is in a monochrome blue and green.', 173, false, false, true, false, true, true, true, false, 1); */ 
+		('Le Nest Hotel', 2, 1, 1, 1, 'The Superior Room is in a monochrome blue and green.', 173, false, false, true, false, true, true, true, false, 1); */
 
 CREATE TABLE reservations(
 	reservation_id INT PRIMARY KEY AUTO_INCREMENT,
